@@ -19,7 +19,7 @@ jobs:
     - run: dotnet build --configuration Release
     - run: dotnet test --configuration Release
 
-    - run: dotnet publish MyApi/MyApi.csproj -c Release -o out
+    - run: dotnet publish MVC-Azure-CICD-Teste.csproj -c Release -o out
 
     - name: Deploy no Azure App Service
       uses: azure/webapps-deploy@v3
